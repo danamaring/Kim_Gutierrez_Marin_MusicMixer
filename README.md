@@ -4,7 +4,7 @@
             -built initial website for the music mixer
 
 #Hyeryn - Design (16 Cassettes svg)
-            -made 4 types of cassettes consisting of 16 different sound icons.
+            -made 4 types of cassettes consisting of 16 different icon sounds.
     
 #Edi - Design (Boom Box svg, Readme, Text)
             -uploaded boom box to images
