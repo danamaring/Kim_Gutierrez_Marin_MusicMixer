@@ -23,6 +23,8 @@ body{
 	margin-left: -700px;
 	padding-top: 33px;
 	padding-bottom: 50px;
+	border: thin dashed white;  /* eventually get rid of this */
+
 }
 
 /* -----CASSETTES------ */
@@ -47,6 +49,10 @@ body{
 	cursor: pointer;
 }
 
+.greenCassettes img:hover {
+	opacity: .5; 
+}
+
 
 .blueCassettes {
 	display: flex;
@@ -68,6 +74,9 @@ body{
 	cursor: pointer;
 }
 
+.blueCassettes img:hover {
+	opacity: .5; 
+}
 
 .pinkCassettes {
 	display: flex;
@@ -87,6 +96,10 @@ body{
 	height: auto;
 	padding: 10px;
 	cursor: pointer;
+}
+
+.pinkCassettes img:hover {
+	opacity: .5; 
 }
 
 .orangeCassettes {
@@ -109,6 +122,9 @@ body{
 	cursor: pointer;
 }
 
+.orangeCassettes img:hover {
+	opacity: .5; 
+}
 
 
 
