@@ -31,7 +31,7 @@ Editing boom_box.ai
 ## Ilustrator CC
 Created boom box player
 
-Pushed boom_box.svg to images folder
+Added and committed boom_box.svg to images folder
 
 ## ReadME.md
 ReadME commit and making changes to file
