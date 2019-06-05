@@ -4,6 +4,8 @@ A group project for MMED-1055-19S - Multimedia Authoring 2
 
 ---
 
+# Authors:
+
 ## Dana
 
 ### Sublime Text
