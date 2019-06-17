@@ -42,3 +42,10 @@ ReadME commit and making changes to file
 Downloading audio sounds
 
 ------------------------------
+
+## Contiuned Music Mixer Progress
+
+- downloaded audio files and uploading to repo
+- boom box and layout redesign
+- title design
+- cassette redsign
