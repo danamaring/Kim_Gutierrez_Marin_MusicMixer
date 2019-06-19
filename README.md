@@ -1,51 +1,68 @@
 # Static Volumes
 
-A group project for MMED-1055-19S - Multimedia Authoring 2
+Music Mixer Project for MMED-1055-19S Multimedia Authoring 2
 
----
+## Description
 
-# Authors:
+We are in the process of building a music mixer, where the user will be able to click
+on draggable pieces on to a boom box to play beats and melodies that will be provided.
+Each piece has its own sound and the user will be able to mesh together any sound they
+choose.
 
-## Dana
+## Getting Started
 
-### Sublime Text
-HTML, CSS, and Java created
-Repo folders created
+### Dependencies
 
-(index.html, main.css, reset.css, main.js, images, includes
-.gitignore, assets)
+- There are no prerequisites required for this website
+- Simply go to the website and play the music
 
-HTML code with links to CSS and Javascript
+### Installing
 
-SVG boom box player added to HTML
-SVG cassette icons added to HTML and stylized using CSS
+Set-up/Design/Symantic Tagging
 
-## Hyeryn
+- Repository
+- HTML
+- CSS
+- Javascript
+- Illustrator design
+- Audio mp3's
 
-### Illustrator CC
-SVG cassette design, added colours and cut into smaller rectangles
+* no initial installation required for the user *
 
-Cassette SVG's added and commited to repo (images)
-Editing boom_box.ai
+### Executing program
 
-## Edi
+- Simply visit the website
+- Drag each piece on to the center of the boom box
+- Listen to the sounds
+- When all 4 pieces are put together, they will form an entire song
+- Mix and match the different coloured pieces
 
-### Ilustrator CC
-Created boom box player
+* no code blocks for commands *
 
-Added and committed boom_box.svg to images folder
+## Help
 
-### ReadME.md
-ReadME commit and making changes to file
+If there are any issues while visiting the website, just fresh the page and everything
+should reset.
 
-### Audio
-Downloading audio sounds
+## Authors
 
-------------------------------
+Hyeryn Kim
+[@hyerynkim](www.instagram.com)
 
-## Contiuned Music Mixer Progress
+Dana Marin 
+[@danamarin](www.fanshaweonline.ca)
 
-- downloaded audio files and uploading to repo
-- boom box and layout redesign
-- title design
-- cassette redsign
+Edi Gutierrez
+[@edigutierrez](www.fanshaweonline.ca)
+
+## License
+
+This project is licensed under the [Static Volumes] License - see the LICENSE.md file for details
+
+## Acknowledgments
+
+Inspiration, code snippets, etc.
+* [readme](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc)
+* [meyerweb](https://meyerweb.com/eric/tools/css/reset/index.html)
+* [dreamstime](https://www.dreamstime.com/retro-vintage-cassette-tape-vector-illustration-isolated-white-background-retro-vintage-cassette-tape-vector-illustration-image129576955)
+* [pinterest](https://www.pinterest.com)
