@@ -10,6 +10,8 @@ body {
   background-size: cover;
 }
 
+
+
 /* Header */
 .title {
   width: 30%;
@@ -76,7 +78,7 @@ body {
 
 .container_tl img {
   width: 100px;
-  height: auto;
+  height: 60px;
   padding: 10px;
   cursor: pointer;
 }
@@ -95,7 +97,7 @@ body {
 
 .container_bl img {
   width: 100px;
-  height: auto;
+  height: 60px;
   padding: 10px;
   cursor: pointer;
 }
@@ -114,7 +116,7 @@ body {
 
 .container_br img {
   width: 100px;
-  height: auto;
+  height: 60px;
   padding: 10px;
   cursor: pointer;
 }
@@ -133,7 +135,7 @@ body {
 
 .container_tr img {
   width: 100px;
-  height: auto;
+  height: 60px;
   padding: 10px;
   cursor: pointer;
 }
