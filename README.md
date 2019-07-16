@@ -26,6 +26,8 @@ Set-up/Design/Symantic Tagging
 - Javascript
 - Illustrator design
 - Audio mp3's
+- SVG files
+- Reset CSS
 
 * no initial installation required for the user *
 
@@ -37,12 +39,10 @@ Set-up/Design/Symantic Tagging
 - When all 4 pieces are put together, they will form an entire song
 - Mix and match the different coloured pieces
 
-* no code blocks for commands *
-
 ## Help
 
-If there are any issues while visiting the website, just fresh the page and everything
-should reset.
+If there are any issues, there is a reset button that should refresh the page to its original
+layout.
 
 ## Authors
 
