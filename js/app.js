@@ -4,7 +4,8 @@
   //CONSTANTS
   const cassetteIcons = document.querySelector(".parent_container"),
         boomBox = document.querySelector(".boom_box"),
-        dropZones = document.querySelectorAll(".drop-zone");
+        dropZones = document.querySelectorAll(".drop-zone"),
+        resetButton = document.querySelector(".fa-redo-alt");
 
   let draggableIcons = cassetteIcons.querySelectorAll("img"),
       audio11 = document.querySelector(".audio11"),
@@ -75,6 +76,13 @@
 	});
 })
 
+//reset button
+  function resetCassettes() {
+    //if (this.childElementCount >= 1) {
+      console.log('bye everyone');
+    //}
+  }
+
 //AUDIO FUNCTIONS
   function playAudio11() {
     audio11.play();
@@ -132,10 +140,10 @@
   }
 
 //AUDIO EVENTS
-  greenLT.addEventListener("click", playAudio11);
-  blueLT.addEventListener("click", playAudio12);
-  skyLT.addEventListener("click", playAudio13);
-  yellowLT.addEventListener("click", playAudio14);
+  greenLT.addEventListener("mouseover", playAudio11);
+  blueLT.addEventListener("mouseover", playAudio12);
+  skyLT.addEventListener("mouseover", playAudio13);
+  yellowLT.addEventListener("mouseover", playAudio14);
 
   greenLB.addEventListener("click", playAudio21);
   blueLB.addEventListener("click", playAudio22);
@@ -151,6 +159,9 @@
   blueRT.addEventListener("click", playAudio42);
   skyRT.addEventListener("click", playAudio43);
   yellowRT.addEventListener("click", playAudio44);
+
+//reset reset button
+  resetButton.addEventListener("click", resetCassettes);
 
 
 })();
