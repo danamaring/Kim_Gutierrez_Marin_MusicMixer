@@ -1,5 +1,9 @@
 
 /* General settings */
+body, html {
+min-height: 100%;
+}
+
 .hidden {
   display: none;
 }
@@ -8,6 +12,7 @@ body {
   background-image: url("../images/main_background.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 
 /* Header */
@@ -18,6 +23,20 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+}
+
+/* Boombox control */
+.fa-redo-alt {
+  font-size: 2.2em;
+  color: white;
+  margin-left: 230px;;
+  position: absolute;
+  margin-top: 210px;;
+  cursor: pointer;
+}
+
+.fa-redo-alt:hover {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /* Boombox */
@@ -70,13 +89,12 @@ body {
   flex-wrap: wrap;
   margin: 20px;
   position: relative;
-  flex-shrink: 2;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 .container_tl img {
-  width: 100px;
-  height: auto;
+  width: 37%;
+  height: 60px;
   padding: 10px;
   cursor: pointer;
 }
@@ -94,8 +112,8 @@ body {
 }
 
 .container_bl img {
-  width: 100px;
-  height: auto;
+  width: 37%;
+  height: 60px;
   padding: 10px;
   cursor: pointer;
 }
@@ -113,8 +131,8 @@ body {
 }
 
 .container_br img {
-  width: 100px;
-  height: auto;
+  width: 37%;
+  height: 60px;
   padding: 10px;
   cursor: pointer;
 }
@@ -132,8 +150,8 @@ body {
 }
 
 .container_tr img {
-  width: 100px;
-  height: auto;
+  width: 37%;
+  height: 60px;
   padding: 10px;
   cursor: pointer;
 }
