@@ -1,77 +1,106 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<title>MUSIC MIXER</title>
-</head>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
 
-<!--HEADER NAV -->
+    <!-- Font awesome icon -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.css"> -->
 
-<header class="headerNav">
-	<nav>
-		<ul>
-			<li>LOREM1</li>
-			<li>LOREM2</li>
-			<li>LOREM3</li>
-			<li>LOREM4</li>
-			<li>LOREM5</li>
-		</ul>
-	</nav>
-</header>
+    <!-- CSS sheets -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 
-<!-- BODY -->
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="images/boom_box_favicon.png"/>
 
-<body>
-	<div class="header">
-		<h1>MUSIC MIXER (title)</h1>
-	</div>
+    <title>Music Mixer</title>
+  </head>
 
-	<div class="mainFlexbox">
-		<img src="images/music_mixer.svg">
-	</div>
+  <h2 class="hidden">Music Mixer Project</h2>
 
-	<section>
-		<div class="blueCassette">
-			<img src="images/icon1.svg">
-			<img src="images/icon1.svg">
-			<img src="images/icon1.svg">
-			<img src="images/icon1.svg">
-		</div>
+  <header>
+    <div class="title">
+      <img src="images/main_title.svg" alt="Main title">
+    </div>
+  </header>
 
-		<div class="greenassette">
-			<img src="images/icon1.svg">
-			<img src="images/icon1.svg">
-			<img src="images/icon1.svg">
-			<img src="images/icon1.svg">
-		</div>
+  <body>
+    <!-- Boom box reset button -->
+    <!-- <section>
+      <h2 class="hidden">Bombox controls</h2>
+      <i class="fas fa-redo-alt"></i>
+    </section> -->
 
-		<div class="orangeCassette">
-			<img src="images/icon1.svg">
-			<img src="images/icon1.svg">
-			<img src="images/icon1.svg">
-			<img src="images/icon1.svg">
-		</div>
+    <!-- Boom box + drop zones -->
+    <section class="boom_box">
+      <h2 class="hidden">Boombox</h2>
+		  <div class="drop-zone tl"></div>
+      <div class="drop-zone tr"></div>
+      <div class="drop-zone bl"></div>
+      <div class="drop-zone br"></div>
+    </section>
 
-		<div class="pinkCassette">
-			<img src="images/icon1.svg">
-			<img src="images/icon1.svg">
-			<img src="images/icon1.svg">
-			<img src="images/icon1.svg">
-		</div>
-	</section>
+    <!-- cassettes icons containers -->
+    <section class="parent_container">
+      <h2 class="hidden">Audio Cassettes</h2>
+      <div class="container_tl">
+        <img id="greenLT" data-key="11" src="images/green-left-top.svg" alt="Green left top cassette">
+        <img id="blueLT" data-key="12" src="images/blue-left-top.svg" alt="Blue left top cassette">
+        <img id="skyLT" data-key="13" src="images/sky-left-top.svg" alt="Sky left top cassette">
+        <img id="yellowLT" data-key="14" src="images/yellow-left-top.svg" alt="Yellow left top cassette">
+      </div>
 
-<footer class="footerNav">
-	<nav>
-		<ul>
-			<li>LOREM1</li>
-			<li>LOREM2</li>
-			<li>LOREM3</li>
-			<li>LOREM4</li>
-			<li>LOREM5</li>
-		</ul>
-	</nav>
-</footer>
+      <div class="container_bl">
+        <img id="greenLB" data-key="21" src="images/green-left-bottom.svg" alt="Green left bottom cassette">
+        <img id="blueLB" data-key="22" src="images/blue-left-bottom.svg" alt="Blue left bottom cassette">
+        <img id="skyLB" data-key="23" src="images/sky-left-bottom.svg" alt="Sky left bottom cassette">
+        <img id="yellowLB" data-key="24" src="images/yellow-left-bottom.svg" alt="Yellow left bottom cassette">
+      </div>
 
-</body>
+      <div class="container_br">
+        <img id="greenRB" data-key="31" src="images/green-right-bottom.svg" alt="Green right bottom cassette">
+        <img id="blueRB" data-key="32" src="images/blue-right-bottom.svg" alt="Blue right bottom cassette">
+        <img id="skyRB" data-key="33" src="images/sky-right-bottom.svg" alt="Sky right bottom cassette">
+        <img id="yellowRB" data-key="34" src="images/yellow-right-bottom.svg" alt="Yellow right bottom cassette">
+      </div>
+
+      <div class="container_tr">
+        <img id="greenRT" data-key="41" src="images/green-right-top.svg" alt="Green right top cassette">
+        <img id="blueRT" data-key="42" src="images/blue-right-top.svg" alt="Blue right top cassette">
+        <img id="skyRT" data-key="43" src="images/sky-right-top.svg" alt="Sky right top cassette">
+        <img id="yellowRT" data-key="44" src="images/yellow-right-top.svg" alt="Yellow right top cassette">
+      </div>
+    </section>
+
+<!-- audio files -->
+    <section>
+      <h2 class="hidden">Audio files</h2>
+      <div>
+        <audio class="audio11" data-key="11" src="audio/drum_beats/80s_back_beat_01.mp3"></audio>
+        <audio class="audio12" data-key="12" loop src="audio/drum_beats/ambition_beat.1.mp3"></audio>
+        <audio class="audio13" data-key="13" loop src="audio/drum_beats/big_room_snare_break.1.mp3"></audio>
+        <audio class="audio14" data-key="14" loop src="audio/drum_beats/tremor_beat.02.2.mp3"></audio>
+      </div>
+      <div>
+        <audio class="audio21" data-key="21" loop src="audio/hi-hat/free_fall_hi-hats.1.mp3"></audio>
+        <audio class="audio22" data-key="22" loop src="audio/hi-hat/glitter_night_hi-hat_topper.1.mp3"></audio>
+        <audio class="audio23" data-key="23" loop src="audio/hi-hat/hang_tight_hi-hat_topper.1.mp3"></audio>
+        <audio class="audio24" data-key="24" loop src="audio/hi-hat/hi-hat.1.mp3"></audio>
+      </div>
+      <div>
+        <audio class="audio31" data-key="31" loop src="audio/melody/pop_beaquty_piano.1.mp3"></audio>
+        <audio class="audio32" data-key="32" loop src="audio/melody/sky_lounge_electric.mp3"></audio>
+        <audio class="audio33" data-key="33" loop src="audio/melody/two_hand.mp3"></audio>
+        <audio class="audio34" data-key="34" loop src="audio/melody/uptown_club_guitar.mp3"></audio>
+      </div>
+      <div>
+        <audio class="audio41" data-key="41" loop src="audio/synth/afterburner_synth_lead.1.mp3"></audio>
+        <audio class="audio42" data-key="42" loop src="audio/synth/airy_vox_synth.1.mp3"></audio>
+        <audio class="audio43" data-key="43" loop src="audio/synth/colossus_chord_stabs_02.1.mp3"></audio>
+        <audio class="audio44" data-key="44" loop src="audio/synth/transmission_layers.mp3"></audio>
+      </div>
+
+    </section>
+  <script src="js/app.js"></script>
+  </body>
 </html>
