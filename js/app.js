@@ -5,7 +5,7 @@
   const cassetteIcons = document.querySelector(".parent_container"),
         boomBox = document.querySelector(".boom_box"),
         dropZones = document.querySelectorAll(".drop-zone"),
-        resetButton = document.querySelector(".fa-redo-alt");
+        //resetButton = document.querySelector(".fa-redo-alt");
 
   let draggableIcons = cassetteIcons.querySelectorAll("img"),
       audio11 = document.querySelector(".audio11"),
@@ -49,7 +49,6 @@
     piece.addEventListener("dragstart", function(e) {
 		    console.log('draggin...');
 
-
           e.dataTransfer.setData("text/plain", this.id);
 		});
 	});
@@ -71,28 +70,29 @@
 
   	let draggedElement = e.dataTransfer.getData("text/plain");
 
-
   	console.log('you dragged: ', draggedElement);
 
   	//add the image to the drop zone
   	e.target.appendChild(document.querySelector(`#${draggedElement}`));
 
-    // find the element in the DOM and get the data-audio reference
-    let targetAudio = document.querySelector(`#${draggedElement}`).dataset.key;
 
-    let currentAudio = document.querySelector(`audio[data-key=targetAudio]`);
-    currentAudio.play();
+    // find the element in the DOM and get the data-audio reference
+    // let targetAudio = document.querySelector(`#${draggedElement}`).dataset.key;
+    //
+    // let currentAudio = document.querySelector(`audio[data-key=targetAudio]`);
+    // currentAudio.play();
 
 	});
 })
 
 
 //reset button
-  function resetCassettes() {
-    if (dropZones.forEach.childElementCount > 0) {
-      console.log('bye everyone');
-      reset; }
-  }
+  // function resetCassettes() {
+  //   if (dropZones.childElementCount > 0) {
+  //     console.log('bye everyone');
+  //     reset;
+  //   }
+  // }
 
 //AUDIO FUNCTIONS
 
@@ -131,7 +131,6 @@
   function stopAudio14() {
     audio14.pause();
   }
-
 
 
   function playAudio21() {
@@ -249,6 +248,7 @@
   greenLT.addEventListener("mouseover", playAudio11);
   greenLT.addEventListener("mouseout", stopAudio11);
 
+
   blueLT.addEventListener("mouseover", playAudio12);
   blueLT.addEventListener("mouseout", stopAudio12);
 
@@ -299,7 +299,7 @@
 
 
   //reset button
-  resetButton.addEventListener("click", resetCassettes);
+  // resetButton.addEventListener("click", resetCassettes);
 
 
 })();
