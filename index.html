@@ -4,11 +4,14 @@
     <meta charset="utf-8">
 
     <!-- Font awesome icon -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.css">
 
     <!-- CSS sheets -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Gurajada&display=swap" rel="stylesheet">
 
     <!-- favicon -->
     <link rel="shortcut icon" type="image/png" href="images/boom_box_favicon.png"/>
@@ -26,10 +29,10 @@
 
   <body>
     <!-- Boom box reset button -->
-    <!-- <section>
-      <h2 class="hidden">Bombox controls</h2>
+    <section>
+      <h2 class="hidden">Bombox reset</h2>
       <i class="fas fa-redo-alt"></i>
-    </section> -->
+    </section>
 
     <!-- Boom box + drop zones -->
     <section class="boom_box">
@@ -72,11 +75,24 @@
       </div>
     </section>
 
+    <!-- lightbox -->
+    <div class="instructions">
+      <button id="instructions_button">INSTRUCTIONS</button>
+    </div>
+    <section class="lightbox">
+      <h2 class="hidden">Instructions lightbox</h2>
+      <a href="#" class="close-lightbox">X</a>
+      <h2>INSTRUCTIONS:</h2>
+      <p>
+        Static Volumes in its entirety, is a fantastic music mixer that lets you listen to different instrumental sounds as they resonate from the boom box. With an 80’s style layout, these sounds are straight out of the era. Simply drag and drop each cassette piece onto the drop-zone and listen to the sounds. Once you arrange the cassette pieces together you will form a song. If you want to reset the player just hit the reset button and all the pieces will go back to the original position.
+      </p>
+    </section>
+
 <!-- audio files -->
     <section>
       <h2 class="hidden">Audio files</h2>
       <div>
-        <audio class="audio11" data-key="11" src="audio/drum_beats/80s_back_beat_01.mp3"></audio>
+        <audio class="audio11" data-key="11" loop src="audio/drum_beats/80s_back_beat_01.mp3"></audio>
         <audio class="audio12" data-key="12" loop src="audio/drum_beats/ambition_beat.1.mp3"></audio>
         <audio class="audio13" data-key="13" loop src="audio/drum_beats/big_room_snare_break.1.mp3"></audio>
         <audio class="audio14" data-key="14" loop src="audio/drum_beats/tremor_beat.02.2.mp3"></audio>
