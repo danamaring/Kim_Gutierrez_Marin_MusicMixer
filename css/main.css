@@ -25,13 +25,13 @@ body {
   margin-top: 20px;
 }
 
-/* Boombox control */
+/* Boombox reset */
 .fa-redo-alt {
   font-size: 2.2em;
-  color: white;
-  margin-left: 5%;
+  color: #7EE6EB;
   position: absolute;
-  margin-top: 210px;;
+  margin-top: 20%;
+  margin-left: 9%;
   cursor: pointer;
 }
 
@@ -48,10 +48,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
-  border: thin dashed black;
+  /* border: thin dashed black; */
 }
 
-/* Boombox drag zones (TEMPORARY) */
+/* Boombox drag zones */
 .tl { text-align: right; }
 .tr img { bottom: 0; }
 .tl img { bottom: 0; right: 0; }
@@ -60,7 +60,7 @@ body {
 .drop-zone {
 	width: 49.5%;
 	height: 49.5%;
-	border: thin dashed white;
+	/* border: thin dashed white; */
 	float: left;
 	position: relative;
 }
@@ -154,4 +154,71 @@ body {
   height: 60px;
   padding: 10px;
   cursor: pointer;
+}
+
+/* lightbox */
+#instructions_button {
+  color: #7EE6EB;
+  background-color: transparent;
+  width: 135px;
+  height: 34px;
+  font-size: .8em;
+  text-align: center;
+  border-color: #7EE6EB;
+  border-width: thin;
+  cursor: pointer;
+  border-radius: 4px;
+  position: absolute;
+  margin-top: -50%;
+  margin-left: 5%;
+}
+
+#instructions_button:hover {
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+  width: 138px;
+  height: 36px;
+  font-size: .9em;
+}
+
+.lightbox {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0,0,0,0.8);
+  display: none;
+}
+
+.lightbox h2 {
+  color: white;
+  font-size: 3em;
+  font-family: 'Gurajada', serif;
+  text-align: left;
+  margin-top: 20%;
+  margin-left: 20%;
+}
+
+.lightbox p {
+  display: block;
+  color: white;
+  font-size: 2em;
+  font-family: 'Gurajada', serif;
+  text-align: justify;
+  margin-top: 2%;
+  margin-left: 20%;
+  width: 60%;
+}
+
+.show-lightbox {
+  display: block;
+}
+
+.close-lightbox {
+  float: right;
+  right: 20px;
+  color: white;
+  margin: 5%;
+  font-family: 'Gurajada', serif;
+  font-size: 3em;
+  text-decoration: none;
 }

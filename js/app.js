@@ -4,8 +4,11 @@
   //CONSTANTS
   const cassetteIcons = document.querySelector(".parent_container"),
         boomBox = document.querySelector(".boom_box"),
+        instructionsButton = document.querySelector("#instructions_button"),
+        lightBox = document.querySelector('.lightbox'),
+        closeButton = document.querySelector('.close-lightbox'),
         dropZones = document.querySelectorAll(".drop-zone"),
-        //resetButton = document.querySelector(".fa-redo-alt");
+        resetButton = document.querySelector(".fa-redo-alt");
 
   let draggableIcons = cassetteIcons.querySelectorAll("img"),
       audio11 = document.querySelector(".audio11"),
@@ -45,6 +48,8 @@
       audio44 = document.querySelector(".audio44");
 
 //FUNCTIONS
+
+  // drag functions
   draggableIcons.forEach(piece => {
     piece.addEventListener("dragstart", function(e) {
 		    console.log('draggin...');
@@ -59,7 +64,7 @@
       e.preventDefault();
 
 });
-
+  // drop functions
   zone.addEventListener("drop", function(e) {
   	e.preventDefault();
   	console.log("you dropped sumpin on me");
@@ -77,22 +82,30 @@
 
 
     // find the element in the DOM and get the data-audio reference
-    // let targetAudio = document.querySelector(`#${draggedElement}`).dataset.key;
-    //
-    // let currentAudio = document.querySelector(`audio[data-key=targetAudio]`);
-    // currentAudio.play();
+    let targetAudio = document.querySelector(`#${draggedElement}`).dataset.key;
+    //debugger;
+    let currentAudio = document.querySelector(`audio[data-key=targetAudio]`);
+    currentAudio.play();
 
 	});
 })
 
+  // lightbox function
+  function popLightBox() {
+    lightBox.classList.add('show-lightbox');
+  }
+
+  function closeLightBox (event) {
+    event.preventDefault();
+
+  lightBox.classList.remove('show-lightbox');
+  }
+
 
 //reset button
-  // function resetCassettes() {
-  //   if (dropZones.childElementCount > 0) {
-  //     console.log('bye everyone');
-  //     reset;
-  //   }
-  // }
+  function resetCassettes() {
+      window.location.reload(true);
+  }
 
 //AUDIO FUNCTIONS
 
@@ -297,9 +310,12 @@
   yellowRT.addEventListener("mouseover", playAudio44);
   yellowRT.addEventListener("mouseout", stopAudio44);
 
+  // lightbox events
+  instructionsButton.addEventListener("click", popLightBox);
+  closeButton.addEventListener("click", closeLightBox);
 
   //reset button
-  // resetButton.addEventListener("click", resetCassettes);
+  resetButton.addEventListener("click", resetCassettes);
 
 
 })();
